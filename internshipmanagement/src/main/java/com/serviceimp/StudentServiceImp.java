@@ -18,7 +18,7 @@ public class StudentServiceImp implements StudentService {
     @Override
     public void modify_StudentInf(String id,StudentForm student) {
         Student new_student=new Student();
-        new_student.setId(student.getId());
+        new_student.setId(student.getUid());
         new_student.setEmail(student.getEmail());
         new_student.setName(student.getName());
         new_student.setQq(student.getQq());
@@ -38,8 +38,7 @@ public class StudentServiceImp implements StudentService {
         student=students.get(0);
         StudentForm studentForm=new StudentForm();
         studentForm.setEmail(student.getEmail());
-        studentForm.setGrate("2.2");///////////////////暂无
-        studentForm.setId(student.getId());
+        studentForm.setUid(student.getId());
         studentForm.setName(student.getName());
         studentForm.setQq(student.getQq());
         studentForm.setTel(student.getCallnumber());

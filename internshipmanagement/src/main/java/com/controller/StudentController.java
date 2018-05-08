@@ -23,7 +23,7 @@ public class StudentController {
 
     @RequestMapping("/informationsubmit.htm")
     public  String information_modify(ModelAndView model, @RequestBody StudentForm studentForm){
-        studentService.modify_StudentInf(studentForm.getId(),studentForm);
+        studentService.modify_StudentInf(studentForm.getUid(),studentForm);
         return "true";
     }
     @RequestMapping("/informationform.htm")

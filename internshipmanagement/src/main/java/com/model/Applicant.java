@@ -153,25 +153,7 @@ public class Applicant {
         this.studentid = studentid;
     }
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Applicant applicant = (Applicant) o;
-        return Objects.equals(id, applicant.id) &&
-                Objects.equals(applyreason, applicant.applyreason) &&
-                Objects.equals(startdate, applicant.startdate) &&
-                Objects.equals(salary, applicant.salary) &&
-                Objects.equals(companynaMe, applicant.companynaMe) &&
-                Objects.equals(companyaddress, applicant.companyaddress) &&
-                Objects.equals(companyconnectpeople, applicant.companyconnectpeople) &&
-                Objects.equals(enddate, applicant.enddate) &&
-                Objects.equals(companyconnectpeoplejob, applicant.companyconnectpeoplejob) &&
-                Objects.equals(jobgetway, applicant.jobgetway) &&
-                Objects.equals(projectteacher, applicant.projectteacher) &&
-                Objects.equals(helpteacher, applicant.helpteacher) &&
-                Objects.equals(studentid, applicant.studentid);
-    }
+
 
     @Override
     public int hashCode() {

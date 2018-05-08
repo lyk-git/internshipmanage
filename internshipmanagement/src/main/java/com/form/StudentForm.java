@@ -2,12 +2,41 @@ package com.form;
 
 public class StudentForm {
     private String name;
-    private String id;
-    private String grate;
+    private String uid;
     private String tel;
     private String email;
     private String qq;
     private String wechat;
+    private String emergency_contact;
+    private String type="Student";
+    private String profile_complete= "true";
+    private String intern_state= "1";
+    private String messages_count= "2";
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    public String getProfile_complete() {
+        return profile_complete;
+    }
+
+    public void setProfile_complete(String profile_complete) {
+        this.profile_complete = profile_complete;
+    }
+
+    public String getMessages_count() {
+        return messages_count;
+    }
+
+    public void setMessages_count(String messages_count) {
+        this.messages_count = messages_count;
+    }
+
+
 
     public String getName() {
         return name;
@@ -17,20 +46,12 @@ public class StudentForm {
         this.name = name;
     }
 
-    public String getId() {
-        return id;
+    public String getUid() {
+        return uid;
     }
 
-    public void setId(String id) {
-        this.id = id;
-    }
-
-    public String getGrate() {
-        return grate;
-    }
-
-    public void setGrate(String grate) {
-        this.grate = grate;
+    public void setUid(String id) {
+        this.uid = id;
     }
 
     public String getTel() {
@@ -63,5 +84,21 @@ public class StudentForm {
 
     public void setWechat(String wechat) {
         this.wechat = wechat;
+    }
+
+    public String getEmergency_contact() {
+        return emergency_contact;
+    }
+
+    public void setEmergency_contact(String emergency_contact) {
+        this.emergency_contact = emergency_contact;
+    }
+
+    public String getIntern_state() {
+        return intern_state;
+    }
+
+    public void setIntern_state(String intern_state) {
+        this.intern_state = intern_state;
     }
 }

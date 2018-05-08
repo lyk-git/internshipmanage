@@ -16,6 +16,8 @@
   </parent>
 
 
+
+
   <dependencies>
     <dependency>
       <groupId>org.springframework.boot</groupId>
@@ -64,6 +66,11 @@
       <artifactId>hibernate-core</artifactId>
       <version>5.2.12.Final</version>
     </dependency>
+
+
+
+
+
 
   </dependencies>
 
